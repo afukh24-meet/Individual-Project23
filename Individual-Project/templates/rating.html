@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title>Star Rating</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleC.css') }}">
+	<style>
+		#sub{
+
+		}
+	</style>
+</head> 
+<body> 
+	<center>
+	<h1> Rating {{ city }}</h1> 
+	<form method="post" action="/rating">
+	<div class="rating"> 
+		<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label> 
+		<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label> 
+		<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label> 
+		<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+		<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label> 
+	</div>
+	<div class="submit-btn">
+		<input id='sub' type="submit" value="Submit">
+	</div>
+
+
+	</form>
+</center>
+</body> 
+</html>
+

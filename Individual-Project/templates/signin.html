@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleA.css') }}">
+
+</head>
+<body>
+    <form method="post" action="signin">
+        <!-- Heading -->
+        <h2>
+        Log in to your account
+        </h2>
+
+        <!-- Subheading -->
+        <p >
+        Please fill up your information below to sign in.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6" required>
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <br>
+    <div class="signup-btn-container">
+        <a href="/"><button>signup</button></a>
+    </div>
+
+</body>
+</html>

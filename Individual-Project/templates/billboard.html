@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Billboard</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleF.css') }}">
+</head> 
+<body class="container"> 
+	<h1>the average rating for all the cities based on the visitors</h1>
+	{%for city in data%}
+	<h2>{{city}} : {{data[city]}}</h2>
+	<br>
+	{% endfor %}
+</body> 
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>choosing</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<h1> Please choose which city you want to rate and leave a comment about </h1>
+	<br>
+	<br>
+	<h2>Currently, we have just the top 7 cities with the biggest population</h2>
+	<form action="/choosing" method="POST">
+		<div class="city">
+			<input type="radio" name="city" value="haifa">
+			<label for="haifa">Haifa</label>
+			<img src="https://i0.wp.com/www.touristisrael.com/wp-content/uploads/2012/03/Haifa.jpg?resize=1024%2C649&ssl=1" alt="Haifa">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="jerusalem">
+			<label for="jerusalem">Jerusalem</label>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2014-06_Israel_-_Jerusalem_090_%2814936890061%29.jpg/640px-2014-06_Israel_-_Jerusalem_090_%2814936890061%29.jpg" alt="Jerusalem">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="tel-aviv">
+			<label for="tel-aviv">Tel Aviv</label>
+			<img src="https://media.timeout.com/images/105434111/image.jpg" alt="Tel Aviv">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="nazarth">
+			<label for="nazarth">Nazareth</label>
+			<img src="https://i0.wp.com/www.touristisrael.com/wp-content/uploads/2009/08/Secrets-of-the-Galilee-and-Nazareth-Tour-1-day-private-tour3.jpg?fit=1200%2C800&ssl=1" alt="Nazareth">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="Rishon LeTsiyon">
+			<label for="Rishon LeTsiyon">Rishon LeTsiyon</label>
+			<img src="https://149490531.v2.pressablecdn.com/wp-content/uploads/2020/09/7693067d84d217d01ca89f5424d4871f-1024x576.jpg" alt="Rishon LeTsiyon">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="Netanya">
+			<label for="Netanya">Netanya</label>
+			<img src="https://www.nbn.org.il/wp-content/uploads/2020/08/netanya04.jpg" alt="Netanya">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="Ashdod">
+			<label for="Ashdod">Ashdod</label>
+			<img src="https://res.cloudinary.com/globes/image/upload/t_desktop_article_content_header_800%2A392/v1657770891/direct/shutterstock_1503089147_vq6cy8.jpg" alt="Ashdod">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="Be'er Sheva">
+			<label for="Be'er Sheva">Be'er Sheva</label>
+			<img src="https://www.nbn.org.il/wp-content/uploads/2020/08/b7_01.jpg" alt="Be'er Sheva">
+		</div>
+		<div class="city">
+			<input type="radio" name="city" value="gaza">
+			<label for="ghaza">Gaza</label>
+			<img src="https://www.dzbreaking.com/wp-content/uploads/2017/03/01_309305454.jpg" alt="Ghaza">
+		</div>
+		<div class="submit-btn">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+</body>
+</html>
+

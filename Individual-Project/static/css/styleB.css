@@ -1,0 +1,107 @@
+/* Reset default margins and paddings */
+body, h1, h2, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://a.cdn-hotels.com/gdcs/production142/d1399/f8f4ac45-1083-49d2-8cfa-1bf5939bc3ac.jpg') center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  height: 100vh; /* Adjust this value to control the vertical centering */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Golden yellow */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Golden yellow */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px; /* Increase padding to make the form bigger */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px; /* Add margin at the bottom */
+  margin-top: 40px; /* Adjust the top margin to position the form at the top */
+}
+
+form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ffcc00; /* Golden yellow */
+  color: #000; /* Black */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e6b800; /* Darker shade of golden yellow */
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffcc00; /* Golden yellow */
+  color: #000; /* Black */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e6b800; /* Darker shade of golden yellow */
+}
+
+/* Additional styling for the signup button */
+.signup-btn-container {
+  margin-top: 10px; /* Increase the margin to separate the button */
+  margin-bottom: 10px; /* Add margin at the bottom */
+}
